@@ -1,0 +1,14 @@
+<div class="dashboard">
+  <div class="logo">
+    <img src="assets/images/Logo.png" alt="Your Logo" class="logo-image" (click)="redirect('home')" />
+  </div>
+  <div class="menu-items">
+    <span (click)="redirect('upload')">Upload a Record</span>
+    <span (click)="redirect('profile')">User Profile</span>
+    <span (click)="redirect('search')">Search</span>
+  </div>
+</div>
+
+<div style="height: 80px"></div>
+
+<router-outlet></router-outlet>
